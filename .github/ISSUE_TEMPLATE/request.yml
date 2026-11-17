@@ -1,0 +1,11 @@
+name: Template or feature request
+description: Suggest a new template or a change to an existing one.
+labels: [request]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What would you use it for, and what should it include?
+    validations:
+      required: true

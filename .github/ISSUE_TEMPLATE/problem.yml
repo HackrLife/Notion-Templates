@@ -1,0 +1,27 @@
+name: Something is not working
+description: Report a problem with one of the templates.
+labels: [problem]
+body:
+  - type: dropdown
+    id: template
+    attributes:
+      label: Template
+      options:
+        - Second Brain OS
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you saw instead. Screenshots help.
+    validations:
+      required: true
+  - type: dropdown
+    id: plan
+    attributes:
+      label: Notion plan
+      options:
+        - Free
+        - Plus
+        - Business or Enterprise
